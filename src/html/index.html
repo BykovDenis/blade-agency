@@ -1,14 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Blade agency</title>
 </head>
 <body>
-    <header>
-        <>
-    </header>
-    <main></main>
-    <footer></footer>
+<header>
+  <div class="main-menu">
+    <div class="logo"></div>
+  </div>
+  <nav>
+    <ul>
+      <li>ГЛАВНАЯ</li>
+      <li>УЧАСТНИКИ</li>
+      <li>ЖЮРИ</li>
+      <li>БИЛЕТЫ</li>
+      <li>КОНТАКТЫ</li>
+    </ul>
+  </nav>
+  <div class="lang">
+    <p class="lang__actual">Рус</p>
+    <ul class="lang__items lang-items">
+      <li class="lang-items__item lang-item">
+        <button class="lang-items__btn">
+          Рус
+        </button></li>
+      <li class="lang-items__item">
+        <button class="lang-items__btn">
+          Англ
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+<main>
+  <div class="slider">
+    <div class="slider__slide slide">
+      <div class="heading">
+        <p class="heading__heashtags">#bladefashion2019</p>
+        <h1 class="heading__title">Показ лучших молодых дизайнеров России</h1>
+      </div>
+      <div class="info">
+        <table class="info-table">
+          <tr class="info-table__row">
+            <td class="info-table__cell"><i class="icon__calendar"></i> <p>18 ноября 1230 – 2000</p></td>
+            <td class="info-table__cell"><i class="icon__location"></i> <p>Москва Лофт-центр «Эдем»</p></td>
+            <td class="info-table__cell"><i class="icon__winner"></i> <p>Победитель едет на показ Blade в Париж!</p></td>
+          </tr>
+        </table>
+      </div>
+      <div class="booking">
+        <label for="ticketBooking" class="booking__label">БРОНЬ БИЛЕТА</label>
+        <input id="ticketBooking" type="text" class="booking__input" value="БРОНЬ БИЛЕТА">
+        <button class="booking__btn">
+          <i class="icon__arrow"></i>
+          БРОНЬ БИЛЕТА
+        </button>
+      </div>
+      <div class="social">
+        <ul class="social-list">
+          <li>
+            <a href="#"><i class="icon icon__fb"></i>fb</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon icon__insta"></i>instagram</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon icon__twitter"></i>twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="banner"><img src="#" alt="Показ лучших молодых дизайнеров России"></div>
+      <ul class="slider__directions slider-directions">
+        <li class="slider-directions__left"><button><i></i>left</button></li>
+        <li class="slider-directions__right"><button><i></i>right</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="participants">
+    <h2 class="participant__title">
+      Участники
+    </h2>
+    <div class="participants__container participants-slider">
+      <div class="participant-slider">
+        <article class="participant-slider__slide participant">
+          <header class="participant__title">
+            классика, нуар
+          </header>
+          <main class="participant__photo">
+            <img src="#" alt="классика, нуар" >
+          </main>
+          <footer  class="participant__footer">
+            <section class="participant-card">
+              <header class="participant-card__avatar">
+                <img src="#" class="participant-card__avatar" alt="avatar">
+              </header>
+              <main class="participant-card__description">
+                <div class="participant-card__founder">Дэвид Робинсон</div>
+                <div class="participant-card__country">США</div>
+              </main>
+              <footer class="participant-card__social">
+                <ul class="participant-card-social">
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                  </li>
+                </ul>
+              </footer>
+            </section>
+            <ul class="participant-slide-directions">
+              <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
+              <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
+            </ul>
+          </footer>
+        </article>
+        <article class="participant-slider__slide participant">
+          <header class="participant__title">
+            авангард, имрессионизм
+          </header>
+          <main class="participant__photo">
+            <img src="#" alt="классика, нуар" >
+          </main>
+          <footer  class="participant__footer">
+            <section class="participant-card">
+              <header class="participant-card__avatar">
+                <img src="#" class="participant-card__avatar" alt="Келли Макдональд">
+              </header>
+              <main class="participant-card__description">
+                <div class="participant-card__name">Келли Макдональд</div>
+                <div class="participant-card__country">Ирландия</div>
+              </main>
+              <footer class="participant-card__social">
+                <ul class="participant-card-social">
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                  </li>
+                </ul>
+              </footer>
+            </section>
+            <ul class="participant-slide-directions">
+              <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
+              <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
+            </ul>
+          </footer>
+        </article>
+        <article class="participant-slider__slide participant">
+          <header class="participant__founder">
+            эклектика, экотренд
+          </header>
+          <main class="participant__photo">
+            <img src="#" alt="классика, нуар" >
+          </main>
+          <footer  class="participant__footer">
+            <section class="participant-card">
+              <header class="participant-card__avatar">
+                <img src="#" class="participant-card__avatar" alt="Костас Папаниколау">
+              </header>
+              <main class="participant-card__description">
+                <div class="participant-card__name">Костас Папаниколау</div>
+                <div class="participant-card__country">Греция</div>
+              </main>
+              <footer class="participant-card__social">
+                <ul class="participant-card-social">
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                  </li>
+                  <li class="participant-card-social__item">
+                    <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                  </li>
+                </ul>
+              </footer>
+            </section>
+            <ul class="participant-slide-directions">
+              <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
+              <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+
+      <ul class="participants-slider__directions participants-slide-directions">
+        <li class="participants-slider-directions participants-slider-directions--left"><button><i></i>left</button></li>
+        <li class="participants-slider-directions participants-slider-directions--right"><button><i></i>right</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="judges">
+    <h2 class="judges__title">
+      Судьи BFW`19
+    </h2>
+    <div class="judges-slider">
+      <div class="judges-slider__container">
+        <article class="judge-card judges-slider__slide">
+          <header class="judge-card__img-container">
+            <img src="#" alt="Давис Бертанс" class="judge-card__img">
+          </header>
+          <main class="judge-card__description judge-card-description">
+            <p class="judge-card__name">
+              Давис Бертанс
+            </p>
+            <p class="judge-card__into">Владелец модного дома в Литве. Судья показов young blood Vilnus.</p>
+            <p class="judge-card__country">Литва</p>
+          </main>
+          <footer class="judge-card__social">
+            <ul class="judge-card-social">
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+              </li>
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article class="judge-card judges-slider__slide">
+          <header class="judge-card__img-container">
+            <img src="#" alt="Давис Бертанс" class="judge-card__img">
+          </header>
+          <main class="judge-card__description judge-card-description">
+            <p class="judge-card__name">
+              Георгий Рубильников
+            </p>
+            <p class="judge-card__into">Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.</p>
+            <p class="judge-card__country">Россия</p>
+          </main>
+          <footer class="judge-card__social">
+            <ul class="judge-card-social">
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+              </li>
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+              </li>
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article class="judge-card judges-slider__slide">
+          <header class="judge-card__img-container">
+            <img src="#" alt="Давис Бертанс" class="judge-card__img">
+          </header>
+          <main class="judge-card__description judge-card-description">
+            <p class="judge-card__name">
+              Давид Гегенешвили
+            </p>
+            <p class="judge-card__into">Создатель Georgia Runway Project. Главный судья на young blood Moscow.</p>
+            <p class="judge-card__country">Грузия</p>
+          </main>
+          <footer class="judge-card__social">
+            <ul class="judge-card-social">
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+              </li>
+              <li class="judge-card-social__item">
+                <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+      <ul class="judges-slider__directions slider-directions">
+        <li class="judges-slider-directions__left"><button><i></i>left</button></li>
+        <li class="judges-slider-directions__right"><button><i></i>right</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tickets">
+    <div class="tickets-description tickets__description">
+    <h2 class="tickets-description__title">Билеты</h2>
+    <p class="tickets-description__description">
+      Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов
+      (в зависимости от предлагаемых опций) и произвести оплату онлайн. Мы принимаем оплату:
+    </p>
+    <div class="tickets-description__payment-container">
+      <ul class="tickets-payment">
+      <li class="tickets-payment__item"><img src="#" alt="visa" class="tickets-payment__img"></li>
+        <li class="tickets-payment__item"><img src="#" alt="Apply pay" class="tickets-payment__img"></li>
+        <li class="tickets-payment__item"><img src="#" alt="mastercard" class="tickets-payment__img"></li>
+        <li class="tickets-payment__item"><img src="#" alt="paypal" class="tickets-payment__img"></li>
+      </ul>
+    </div>
+    <p class="tickets-description__description">
+      По всем вопросам, связанным с покупокй, возвратом или предлагаемыми опциями, вы можете обратиться к нашему консультанту по номеру:
+    </p>
+    <a href="tel:+7 (924) 456 78 90" class="tickets-description__tel">+7 (924) 456 78 90</a>
+  </div>
+    <div class="tickets-price tickets__price">
+      <table class="tickets-price-table">
+        <thead  class="tickets-price-table__head">
+        <tr class="tickets-price-table__row">
+          <th class="tickets-price-table__cell-header"></th>
+          <th class="tickets-price-table__cell-header">
+            <p class="tickets-price-table__title">ЗРИТЕЛЬ</p>
+            <ul class="tickets-price__rates">
+              <li class="tickets-price__rate"><i class="icon-star" ></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star icon-star--transparent" ></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star icon-star--transparent" ></i>star</li>
+            </ul>
+          </th>
+          <th class="tickets-price-table__cell-header">
+            <p class="tickets-price-table__title">ОПТИМУМ</p>
+            <ul class="tickets-price__rates">
+              <li class="tickets-price__rate"><i class="icon-star"></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star"></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star icon-star--transparent"></i>star</li>
+            </ul>
+          </th>
+          <th class="tickets-price-table__cell-header">
+            <p class="tickets-price-table__title">ОПТИМУМ</p>
+            <ul class="tickets-price__rates">
+              <li class="tickets-price__rate"><i class="icon-star"></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star"></i>star</li>
+              <li class="tickets-price__rate"><i class="icon-star icon-star--transparent"></i>star</li>
+            </ul>
+          </th>
+        </tr>
+        </thead>
+        <tbody class="tickets-price-table__body">
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Пакет гостя форума</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Церемония открытия</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Вход на показ</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check"></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Возможность голосовать</td>
+            <td class="tickets-price-table__cell"></td>
+            <td class="tickets-price-table__cell"><i class="icon-check" ></i>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check" ></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Доступ за кулисы</td>
+            <td class="tickets-price-table__cell"></td>
+            <td class="tickets-price-table__cell"><i class="icon-check" ></i>>check</td>
+            <td class="tickets-price-table__cell"><i class="icon-check" ></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell">Эксклюзив от кутюрье</td>
+            <td class="tickets-price-table__cell"></td>
+            <td class="tickets-price-table__cell"></td>
+            <td class="tickets-price-table__cell"><i class="icon-check" ></i>check</td>
+          </tr>
+          <tr class="tickets-price-table__row">
+            <td class="tickets-price-table__cell"></td>
+            <td class="tickets-price-table__cell"><button>Купить</button></td>
+            <td class="tickets-price-table__cell"><button>Купить</button></td>
+            <td class="tickets-price-table__cell"><button>Купить</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="contact-us">
+    <h2 class="contact-us__title">
+      Свяжитесь с нами
+    </h2>
+    <div class="contact-us__info contact-us-info">
+      <ul class="contact-us-info__list contact-us-info-list">
+        <li class="contact-us-info-list__item">
+          <p class="contact-us-info-list__title">
+            офис продаж
+          </p>
+          <p class="contact-us-info-list__description">
+            363561, Москва ул. Пушкина 17/1
+          </p>
+        </li>
+        <li class="contact-us-info-list__item">
+          <p class="contact-us-info-list__title">
+            для связи
+          </p>
+          <p class="contact-us-info-list__description">
+            +7 (924) 456 78 90
+            bfw@gmail.com
+          </p>
+        </li>
+        <li class="contact-us-info-list__item">
+          <p class="contact-us-info-list__title">
+            подпишитесь
+          </p>
+          <div class="contact-us-info-list__description">
+            <ul class=contact-us-info-list__social">
+              <li class="contact-us-info-list__item">
+                <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+              </li>
+              <li class="contact-us-info-list__item">
+                <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+              </li>
+              <li class="contact-us-info-list__item">
+                <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="contact-us-info__map">
+        Map
+      </div>
+    </div>
+    <div class="contact-us__feedback">
+      <p class="contact-us__feedback-title">
+        Остались вопросы? Спросите нас! Мы ответим!
+      </p>
+      <form method="POST" class="contact-us-form">
+        <ul class="contact-us-form__items">
+          <li class="contact-us-form__item">
+            <label for="user-name" class="contact-us-form__label">Имя</label>
+            <input id="user-name" name="userName" type="text" class="contact-us-form__input" placeholder="Введите имя">
+          </li>
+          <li class="contact-us-form__item">
+            <label for="email" class="contact-us-form__label">EMAIL</label>
+            <input id="email" name="email" type="text" class="contact-us-form__input" placeholder="Введите e-mail">
+          </li>
+          <li class="contact-us-form__item">
+            <label for="message" class="contact-us-form__label">Сообщение</label>
+            <textarea id="message" type="message" class="contact-us-form__input" placeholder="Введите имя"></textarea>
+          </li>
+        </ul>
+        <button class="contact-us-form__submit" type="submit">
+          ОТПРАВИТЬ
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+<footer></footer>
 </body>
 </html>
