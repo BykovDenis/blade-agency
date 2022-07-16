@@ -1,0 +1,39 @@
+{
+  "name": "blade-agency",
+  "version": "1.0.0",
+  "description": "landing page training project",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open  --config webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BykovDenis/blade-agency.git"
+  },
+  "keywords": [
+    "webpack",
+    "scss",
+    "javascript",
+    "html"
+  ],
+  "author": "Denis Bykov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BykovDenis/blade-agency/issues"
+  },
+  "homepage": "https://github.com/BykovDenis/blade-agency#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
