@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 const paths = require("./paths");
+const TerserPlugin = require('terser-webpack-plugin');
+const WebpackBar = require('webpackbar');
 
 module.exports = {
   mode: 'production',
@@ -8,9 +9,6 @@ module.exports = {
     indexTs: {
       import: paths.appTs,
     },
-    indexScss: {
-      import: paths.appScss,
-    }
   },
   output: {
     path: paths.dist,
@@ -26,12 +24,13 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(sa|sc|c)ss$/i,
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
           // Translates CSS into CommonJS
           "css-loader",
+          "postcss-loader",
           // Compiles Sass to CSS
           "sass-loader",
         ],
@@ -41,5 +40,16 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+    usedExports: true,
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+  plugins: [new HtmlWebpackPlugin({
+    filename: 'index.html',
+    template: 'src/html/index.html',
+  }), new WebpackBar()],
 };
