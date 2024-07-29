@@ -3,74 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>Blade agency</title>
+  <link rel="stylesheet" href="./src/scss/index.scss" />
 </head>
 <body>
 <header>
   <div class="main-menu">
-    <div class="logo"></div>
-  </div>
-  <nav>
-    <ul>
-      <li>ГЛАВНАЯ</li>
-      <li>УЧАСТНИКИ</li>
-      <li>ЖЮРИ</li>
-      <li>БИЛЕТЫ</li>
-      <li>КОНТАКТЫ</li>
-    </ul>
-  </nav>
-  <div class="lang">
-    <p class="lang__actual">Рус</p>
-    <ul class="lang__items lang-items">
-      <li class="lang-items__item lang-item">
-        <button class="lang-items__btn">
-          Рус
-        </button></li>
-      <li class="lang-items__item">
-        <button class="lang-items__btn">
-          Англ
-        </button>
-      </li>
-    </ul>
+    <div class="logo-container">
+      <img src="./src/img/logo-blade.svg" alt="BLADE" width="260" height="145">
+    </div>
+    <nav class="main-nav-container">
+      <ul class="nav-items">
+        <li class="nav-items__item">
+          <a class="nav-items__link" href="/">ГЛАВНАЯ</a>
+        </li>
+        <li class="nav-item__item">
+          <a class="nav-items__link" href="/participates.html">
+            УЧАСТНИКИ
+          </a>
+        </li>
+        <li class="nav-item__item">
+          <a class="nav-items__link" href="/participates.html">
+            ЖЮРИ
+          </a>
+        </li>
+        <li class="nav-item__item">
+          <a class="nav-items__link" href="/tickets.html">
+            БИЛЕТЫ
+          </a>
+        </li>
+        <li class="nav-item__item">
+          <a class="nav-items__link" href="/contacts.html">
+            КОНТАКТЫ
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang">
+      <p class="lang__actual">Рус</p>
+<!--      <ul class="lang__items lang-items">-->
+<!--        <li class="lang-items__item lang-item">-->
+<!--          <button class="lang-items__btn">-->
+<!--            Рус-->
+<!--          </button></li>-->
+<!--        <li class="lang-items__item">-->
+<!--          <button class="lang-items__btn">-->
+<!--            Англ-->
+<!--          </button>-->
+<!--        </li>-->
+<!--      </ul>-->
+    </div>
   </div>
 </header>
 <main>
   <div class="slider">
-    <div class="slider__slide slide">
-      <div class="heading">
-        <p class="heading__heashtags">#bladefashion2019</p>
-        <h1 class="heading__title">Показ лучших молодых дизайнеров России</h1>
-      </div>
-      <div class="info">
-        <table class="info-table">
-          <tr class="info-table__row">
-            <td class="info-table__cell"><i class="icon__calendar"></i> <p>18 ноября 1230 – 2000</p></td>
-            <td class="info-table__cell"><i class="icon__location"></i> <p>Москва Лофт-центр «Эдем»</p></td>
-            <td class="info-table__cell"><i class="icon__winner"></i> <p>Победитель едет на показ Blade в Париж!</p></td>
-          </tr>
-        </table>
-      </div>
-      <div class="booking">
-        <label for="ticketBooking" class="booking__label">БРОНЬ БИЛЕТА</label>
-        <input id="ticketBooking" type="text" class="booking__input" value="БРОНЬ БИЛЕТА">
-        <button class="booking__btn">
-          <i class="icon__arrow"></i>
-          БРОНЬ БИЛЕТА
-        </button>
-      </div>
-      <div class="social">
-        <ul class="social-list">
-          <li>
-            <a href="#"><i class="icon icon__fb"></i>fb</a>
-          </li>
-          <li>
-            <a href="#"><i class="icon icon__insta"></i>instagram</a>
-          </li>
-          <li>
-            <a href="#"><i class="icon icon__twitter"></i>twitter</a>
-          </li>
-        </ul>
-      </div>
-      <div class="banner"><img src="#" alt="Показ лучших молодых дизайнеров России"></div>
+    <div class="slider__slide slide slide-first">
+      <div class="slide-first__description">
+        <p class="slide-first__hashtags">#bladefashion2019</p>
+        <h1 class="slide-first__title">Показ лучших молодых дизайнеров России</h1>
+        <div class="slide-first__info info">
+          <table class="info-table">
+            <tr class="info-table__row">
+              <td class="info-table__cell">
+                <div class="info-table__cell-container">
+                  <img class="icon__calendar" width="38" height="38" alt="calendar" />
+                  <p>18 ноября 1230 – 2000</p>
+                </div>
+              </td>
+              <td class="info-table__cell">
+                <div class="info-table__cell-container">
+                  <img class="icon__calendar" width="38" height="38" alt="location" />
+                  <p>Москва Лофт-центр «Эдем»</p>
+                </div>
+              </td>
+              <td class="info-table__cell">
+                <div class="info-table__cell-container">
+                  <img class="icon__calendar" width="40" height="40" alt="reward" />
+                  <p>Победитель едет на показ Blade в Париж!</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="slide-first__booking booking">
+          <label for="ticketBooking" class="booking__label">БРОНЬ БИЛЕТА</label>
+          <input id="ticketBooking" type="text" class="booking__input" value="БРОНЬ БИЛЕТА">
+          <button class="booking__btn">
+            <i class="icon__arrow"></i>
+            БРОНЬ БИЛЕТА
+          </button>
+        </div>
+        <div class="slide-first__socials socials">
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a href="#"><img class="social-icon social-icon__fb" width="44" height="44" alt="Facebook"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#"><img class="social-icon social-icon__insta" width="44" height="44" alt="Instagram" /></a>
+            </li>
+            <li class="socials__item">
+              <a href="#"><img class="social-icon social-icon__x" width="44" height="44" alt="X" /></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <div class="slide slide-first__img-container"><img class="slide-first__img" src="#" width="866" height="908" alt="Показ лучших молодых дизайнеров России"></div>
       <ul class="slider__directions slider-directions">
         <li class="slider-directions__left"><button><i></i>left</button></li>
         <li class="slider-directions__right"><button><i></i>right</button></li>
@@ -407,7 +443,7 @@
             подпишитесь
           </p>
           <div class="contact-us-info-list__description">
-            <ul class=contact-us-info-list__social">
+            <ul class="contact-us-info-list__social">
               <li class="contact-us-info-list__item">
                 <a href="#"><i class="icon icon--fb-small"></i>fb</a>
               </li>
@@ -452,5 +488,6 @@
   </div>
 </main>
 <footer></footer>
+<script type="module" src="./src/index.ts"></script>
 </body>
 </html>

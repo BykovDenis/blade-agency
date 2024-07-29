@@ -1,0 +1,48 @@
+.slide-first {
+  display: grid;
+  grid-template-columns: 1fr 866px;
+  grid-template-rows: 1fr;
+  &__img-container {
+    outline: 1px dashed green;
+  }
+  &__description {
+    box-sizing: border-box;
+    outline: 1px dashed blue;
+    //display: grid;
+    //grid-template-columns: 1fr;
+    //grid-template-rows: 20px 160px 48px 93px 44px;
+    //grid-template-rows: 29px 160px 48px 1fr 1fr;
+    //justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__hashtags {
+    font-size: 24px;
+    color: $main-yellow-color;
+    margin-bottom: 10px;
+    min-height: 29px;
+  }
+  &__title {
+    font-size: $h1-font-size;
+    letter-spacing: 2.88px;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 70px;
+    min-height: 160px;
+  }
+  &__info {
+    height: 48px;
+    margin-bottom: 120px;
+    & > p {
+      margin: 0;
+    }
+  }
+  &__booking {
+    min-height: 93px;
+    margin-bottom: 137px;
+  }
+  &__socials {
+    height: 44px;
+  }
+}

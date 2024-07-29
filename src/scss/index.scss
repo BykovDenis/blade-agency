@@ -1,7 +1,26 @@
-@import './variables';
+@import './_variables.scss';
+@import './_fonts.scss';
+@import './blocks/header-container';
+@import './blocks/logo-container';
+@import './blocks/main-menu';
+@import './blocks/nav-items';
+@import './blocks/lang';
+@import './blocks/slider';
+@import './blocks/slide';
+@import './blocks/slide-first';
+@import './blocks/slider-directions';
+@import './blocks/socials';
+@import './blocks/social-icon';
+@import './blocks/info-table';
 
 body {
   color: $font-color-primary;
+  font-family: $font-family;
+  font-size: $base-font-size;
+}
+
+a,H1, H2, H3, H4, H5, H6 {
+  font-family: $font-family;
 }
 
 

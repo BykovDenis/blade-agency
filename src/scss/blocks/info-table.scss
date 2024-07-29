@@ -1,0 +1,8 @@
+.info-table {
+  width: 843px;
+  &__cell-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 40px;
+  }
+}
