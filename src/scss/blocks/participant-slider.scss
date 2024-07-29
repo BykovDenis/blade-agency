@@ -1,0 +1,10 @@
+.participant-slider {
+  display: grid;
+  grid-template-rows: 668px;
+  grid-template-columns: 477px 477px 477px;
+  gap: 50px;
+  justify-content: center;
+  &__slide {
+    outline: 1px dashed green;
+  }
+}
