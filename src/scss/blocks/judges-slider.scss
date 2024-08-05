@@ -1,0 +1,9 @@
+.judges-slider {
+  &__container {
+    display: grid;
+    grid-template-rows: 656px;
+    grid-template-columns: 470px 470px 470px;
+    gap: 20px;
+    justify-content: center;
+  }
+}

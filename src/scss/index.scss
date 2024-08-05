@@ -1,4 +1,6 @@
+@import 'normalize.css';
 @import './_variables.scss';
+@import './_mixins.scss';
 @import './_fonts.scss';
 @import './blocks/header-container';
 @import './blocks/logo-container';
@@ -18,6 +20,13 @@
 @import './blocks/participant-slider';
 @import './blocks/participant-slide-directions';
 @import './blocks/participant-card';
+@import './blocks/judges';
+@import './blocks/judge-card';
+@import './blocks/judges-slider';
+@import './blocks/judge-card-description';
+@import './blocks/tickets';
+@import './blocks/tickets-description';
+@import './blocks/tickets-payment';
 
 body {
   color: $font-color-primary;

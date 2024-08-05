@@ -33,3 +33,47 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src:
+    local('Playfair Display'),
+    url(../fonts/PlayfairDisplay-Regular.woff2) format('woff2'),
+    url(../fonts/PlayfairDisplay-Regular.ttf) format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src:
+    local('Playfair Display'),
+    url(../fonts/PlayfairDisplay-Italic.woff2) format('woff2'),
+    url(../fonts/PlayfairDisplay-Italic.ttf) format('ttf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src:
+    local('Playfair Display'),
+    url(../fonts/PlayfairDisplay-Bold.woff2) format('woff2'),
+    url(../fonts/PlayfairDisplay-Bold.ttf) format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src:
+    local('Playfair Display'),
+    url(../fonts/PlayfairDisplay-Black.woff2) format('woff2'),
+    url(../fonts/PlayfairDisplay-Black.ttf) format('ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

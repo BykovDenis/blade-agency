@@ -1,0 +1,36 @@
+.tickets-payment {
+  display: grid;
+  grid-template-columns: 47px 44px 35px 59px;
+  grid-template-rows: 27px;
+  margin: 0;
+  padding: 0;
+  height: 27px;
+  width: 329px;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid red;
+  &__item {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    &--visa {
+      width: 47px;
+      height: 15px;
+    }
+    &--apple-pay {
+      width: 44px;
+      height: 21px;
+    }
+    &--mastercard {
+      width: 35px;
+      height: 27px;
+    }
+    &--paypal {
+      width: 59px;
+      height: 14px;
+    }
+  }
+}

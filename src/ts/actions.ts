@@ -9,11 +9,11 @@ window.addEventListener('load', () => {
   if (sliderBlock) {
     sliderBlock.style.display = 'none';
   }
+  if (participantsBlock) {
+    participantsBlock.style.display = 'none';
+  }
   if (judgesBlock) {
     judgesBlock.style.display = 'none';
-  }
-  if (ticketsBlock) {
-    ticketsBlock.style.display = 'none';
   }
   if (contactUsBlock) {
     contactUsBlock.style.display = 'none';

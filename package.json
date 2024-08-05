@@ -11,6 +11,7 @@
   "devDependencies": {
     "eslint": "9.8.0",
     "normalize.css": "8.0.1",
+    "prettier": "3.3.3",
     "sass": "^1.77.8",
     "stylelint": "16.7.0",
     "typescript": "^5.2.2",

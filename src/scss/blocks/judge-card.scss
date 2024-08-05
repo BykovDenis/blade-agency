@@ -1,0 +1,26 @@
+.judge-card {
+  width: 470px;
+  height: 656px;
+  outline: 1px solid red;
+  &__img-container {
+    width: 454px;
+    height: 382px;
+    outline: 1px dashed pink;
+  }
+  &__img {
+    width: 454px;
+    height: 382px;
+    outline: 1px dashed green;
+  }
+  &__name {
+    font-family: $header-font-family;
+    font-size: $h3-font-size;
+    line-height: 1.1;
+  }
+  &__info {
+    line-height: 1.5;
+  }
+  &__country {
+    font-size: #{$base-font-size - 4};
+  }
+}
