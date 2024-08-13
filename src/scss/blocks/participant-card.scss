@@ -1,10 +1,14 @@
 .participant-card {
   &__author {
     font-size: $h4-font-size;
+    font-family: $title-font-family;
+    line-height: 1.1;
+    font-weight: 700;
   }
   &__country {
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   &__avatar-container {
     width: 64px;

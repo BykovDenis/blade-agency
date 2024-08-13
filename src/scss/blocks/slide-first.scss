@@ -24,13 +24,14 @@
     min-height: 29px;
   }
   &__title {
-    font-family: $header-font-family;
+    font-family: $title-font-family;
     font-size: $h1-font-size;
+    color: $main-white-color;
     letter-spacing: 2.88px;
     line-height: 1.1;
-    margin: 0;
-    margin-bottom: 70px;
+    margin: 0 0 70px 0;
     min-height: 160px;
+    font-weight: 900;
   }
   &__info {
     height: 48px;

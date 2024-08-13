@@ -5,4 +5,22 @@
     grid-template-columns: 40px 1fr;
     grid-template-rows: 40px;
   }
+  &__cell-description {
+    margin: 0;
+    color: $font-color-inverted;
+    word-break: break-word;
+    &--calendar {
+      max-width: 86px;
+    }
+    &--location {
+      max-width: 165px;
+    }
+    &--reward {
+      max-width: 232px;
+    }
+  }
+  &__cell-minutes {
+    vertical-align: super;
+    font-size: calc($base-font-size / 2);
+  }
 }

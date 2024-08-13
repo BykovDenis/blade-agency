@@ -13,8 +13,12 @@
     "normalize.css": "8.0.1",
     "prettier": "3.3.3",
     "sass": "^1.77.8",
+    "sharp": "0.33.4",
     "stylelint": "16.7.0",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vite-plugin-image-optimizer": "1.1.8",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vite-plugin-webp-generator": "0.1.0"
   }
 }

@@ -1,5 +1,5 @@
 .judges {
-  margin-left: 145px;
+  margin-left: $body-margin-left;
   &__title {
     @include h2-header-text;
   }

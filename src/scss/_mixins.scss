@@ -1,5 +1,6 @@
 @mixin h2-header-text {
   font-size: $h2-font-size;
-  font-family: $header-font-family;
+  font-family: $title-font-family;
   color: $h2-font-color;
+  margin: 0;
 }

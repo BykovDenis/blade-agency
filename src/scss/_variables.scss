@@ -1,20 +1,24 @@
 $main-black-color: #303030;
 $main-white-color: #ffffff;
 $main-purple-color: #7C6AAD;
-$main-yellow-color: #F2C03F;
+$main-gold-color: #F2C03F;
+$main-yellow-color: #F7BF2F;
 
 $font-color-primary: $main-black-color;
+$font-color-inverted: $main-white-color;
 $header-color: $main-purple-color;
 $base-font-color: $main-black-color;
 $h2-font-color: #151515;
-$font-color-inverted: $main-white-color;
 $base-font-size: 18px;
 $h1-font-size: 72px;
 $h2-font-size: 72px;
 $h3-font-size: 40px;
 $h4-font-size: 24px;
 
-$font-family: 'Lato', 'Times New Roman', sans-serif;
-$header-font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+$font-family: 'Lato', 'Arial', sans-serif;
+$title-font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+
+$main-body-desktop-width: 1635px;
+$body-margin-left: 134px;
 
 

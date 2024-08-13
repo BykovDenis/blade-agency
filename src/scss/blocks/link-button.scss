@@ -9,6 +9,7 @@
   background-color: transparent;
   min-width: 150px;
   z-index: 1;
+  font-weight: 700;
   &--active:before {
     position: absolute;
     display: block;
@@ -18,5 +19,8 @@
     height: 16px;
     background-color: $main-yellow-color;
     z-index: -1;
+  }
+  &--main-page {
+    color: $font-color-inverted;
   }
 }

@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "blade-agency/src"
+    "src"
   ]
 }

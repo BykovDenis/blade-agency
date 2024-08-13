@@ -4,42 +4,44 @@
   <meta charset="UTF-8">
   <title>Blade agency</title>
   <link rel="stylesheet" href="./src/scss/index.scss" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
-<body>
-  <header>
+<body class="main-body">
+  <header class="main-header">
     <div id="header" class="main-menu">
       <div class="logo-container">
         <img src="./src/img/logo-blade.svg" alt="BLADE" width="260" height="145">
+        <p class="logo-container__hashtag logo-container__hashtag--invisible">#bladefashion2019</p>
       </div>
       <form method="GET" class="main-nav-container" id="nav-form">
         <ul class="nav-items">
           <li class="nav-items__item">
-            <button id="main-link-button" type="button" class="nav-items__link link-button">ГЛАВНАЯ</button>
+            <button id="main-link-button" type="button" class="nav-items__link link-button link-button--main-page link-button--active">ГЛАВНАЯ</button>
           </li>
           <li class="nav-item__item">
-            <button id="participants-link-button" type="button" class="nav-items__link link-button">
+            <button id="participants-link-button" type="button" class="nav-items__link link-button--main-page link-button">
               УЧАСТНИКИ
             </button>
           </li>
           <li class="nav-item__item">
-            <button id="judges-link-button" type="button" class="nav-items__link link-button link-button--active">
+            <button id="judges-link-button" type="button" class="nav-items__link link-button--main-page link-button">
               ЖЮРИ
             </button>
           </li>
           <li class="nav-item__item">
-            <button id="tickets-link-button" type="button"  class="nav-items__link link-button">
+            <button id="tickets-link-button" type="button"  class="nav-items__link link-button--main-page link-button">
               БИЛЕТЫ
             </button>
           </li>
           <li class="nav-item__item">
-            <button id="contacts-link-button" type="button"  class="nav-items__link link-button">
+            <button id="contacts-link-button" type="button"  class="nav-items__link link-button--main-page link-button">
               КОНТАКТЫ
             </button>
           </li>
         </ul>
       </form>
       <div class="lang">
-        <p class="lang__actual">Рус</p>
+        <p class="lang__actual lang__actual--main-page">Рус</p>
   <!--      <ul class="lang__items lang-items">-->
   <!--        <li class="lang-items__item lang-item">-->
   <!--          <button class="lang-items__btn">-->
@@ -65,48 +67,48 @@
               <tr class="info-table__row">
                 <td class="info-table__cell">
                   <div class="info-table__cell-container">
-                    <img src="" class="icon__calendar" width="38" height="38" alt="calendar" />
-                    <p>18 ноября 1230 – 2000</p>
+                    <img src="./src/img/icon-calendar.svg" class="icon__calendar" width="38" height="38" alt="calendar" />
+                    <p class="info-table__cell-description info-table__cell-description--calendar">
+                      18 ноября 12<span class="info-table__cell-minutes">30</span> – 20<span class="info-table__cell-minutes">00<span>
+                    </p>
                   </div>
                 </td>
                 <td class="info-table__cell">
                   <div class="info-table__cell-container">
-                    <img src="" class="icon__calendar" width="38" height="38" alt="location" />
-                    <p>Москва Лофт-центр «Эдем»</p>
+                    <img src="./src/img/icon-location.svg" class="icon__calendar" width="38" height="38" alt="location" />
+                    <p class="info-table__cell-description info-table__cell-description--location">Москва <br/> Лофт-центр «Эдем»</p>
                   </div>
                 </td>
                 <td class="info-table__cell">
                   <div class="info-table__cell-container">
-                    <img src="" class="icon__calendar" width="40" height="40" alt="reward" />
-                    <p>Победитель едет на показ Blade в Париж!</p>
+                    <img src="./src/img/icon-reward.svg" class="icon__calendar" width="40" height="40" alt="reward" />
+                    <p class="info-table__cell-description info-table__cell-description--reward">Победитель едет <br> на показ Blade в Париж!</p>
                   </div>
                 </td>
               </tr>
             </table>
           </div>
-          <div class="slide-first__booking booking">
-            <label for="ticketBooking" class="booking__label">БРОНЬ БИЛЕТА</label>
-            <input id="ticketBooking" type="text" class="booking__input" value="БРОНЬ БИЛЕТА">
-            <button class="booking__btn">
-              <i class="icon__arrow"></i>
-              БРОНЬ БИЛЕТА
+          <form method="GET" class="slide-first__booking booking">
+            <button type="button" class="booking-btn">
+              <span class="booking-btn__description">БРОНЬ БИЛЕТА</span>
+              <img class="booking-btn__img" src="./src/img/icon-arrow-right.svg" width="47" height="18" alt="booking">
             </button>
-          </div>
+          </form>
           <div class="slide-first__socials socials">
             <ul class="socials__items">
               <li class="socials__item">
-                <a href="#"><img src="" class="social-icon social-icon__fb" width="44" height="44" alt="Facebook"></a>
+                <a href="#"><img src="./src/img/icon-fb.svg" class="social-icon social-icon__fb" width="44" height="44" alt="Facebook"></a>
               </li>
               <li class="socials__item">
-                <a href="#"><img src="" class="social-icon social-icon__insta" width="44" height="44" alt="Instagram" /></a>
+                <a href="#"><img src="./src/img/icon-insta.svg" class="social-icon social-icon__insta" width="44" height="44" alt="Instagram" /></a>
               </li>
               <li class="socials__item">
-                <a href="#"><img src="" class="social-icon social-icon__x" width="44" height="44" alt="X" /></a>
+                <a href="#"><img src="./src/img/icon-x.svg" class="social-icon social-icon__x" width="44" height="44" alt="X" /></a>
               </li>
             </ul>
           </div>
           </div>
-        <div class="slide slide-first__img-container"><img class="slide-first__img" src="#" width="866" height="908" alt="Показ лучших молодых дизайнеров России"></div>
+        <div class="slide slide-first__img-container"><img class="slide-first__img" src="./src/img/img-main-slide.png" width="866" height="908" alt="Показ лучших молодых дизайнеров России"></div>
         <ul class="slider__directions slider-directions">
           <li class="slider-directions__left"><button><i></i>left</button></li>
           <li class="slider-directions__right"><button><i></i>right</button></li>
@@ -124,12 +126,12 @@
               классика, нуар
             </header>
             <main class="participant__photo">
-              <img src="#" alt="классика, нуар" >
+              <img src="./src/img/img-slide-classic.png" width="448" height="580" alt="классика, нуар">
             </main>
             <footer  class="participant__footer">
               <section class="participant-card">
                 <header class="participant-card__avatar-container">
-                  <img src="#" class="participant-card__avatar" width="64" height="64" alt="avatar">
+                  <img src="./src/img/img-avatar-david-robinson.png" class="participant-card__avatar" width="64" height="64" alt="avatar">
                 </header>
                 <main class="participant-card__description">
                   <h4 class="participant-card__author">Дэвид Робинсон</h4>
@@ -138,21 +140,21 @@
                 <footer class="participant-card__social">
                   <ul class="participant-card-social">
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-insta.svg" width="24" height="24" alt="insta" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-fb.svg" width="24" height="24" alt="fb" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-x.svg" width="24" height="24" alt="x" /></a>
                     </li>
                   </ul>
                 </footer>
               </section>
-              <ul class="participant-slide-directions">
-                <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
-                <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
-              </ul>
+              <div class="participant-slide-directions">
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-left-direction.svg" width="10" height="20" alt="Предыдущий"></button>
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-right-direction.svg" width="10" height="20" alt="Следующий"></button>
+              </div>
             </footer>
           </article>
           <article class="participant-slider__slide participant">
@@ -160,12 +162,12 @@
               авангард, имрессионизм
             </header>
             <main class="participant__photo">
-              <img src="#" alt="классика, нуар" >
+              <img src="./src/img/img-slide-avangardism.png" width="448" height="580" alt="классика, нуар" >
             </main>
             <footer  class="participant__footer">
               <section class="participant-card">
                 <header class="participant-card__avatar-container">
-                  <img src="#" class="participant-card__avatar" width="64" height="64" alt="Келли Макдональд">
+                  <img src="./src/img/img-avatar-kelly-macdonald.png" class="participant-card__avatar" width="64" height="64" alt="Келли Макдональд">
                 </header>
                 <main class="participant-card__description">
                   <h4 class="participant-card__author">Келли Макдональд</h4>
@@ -174,21 +176,21 @@
                 <footer class="participant-card__social">
                   <ul class="participant-card-social">
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-insta.svg" width="24" height="24" alt="insta" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-fb.svg" width="24" height="24" alt="fb" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-x.svg" width="24" height="24" alt="x" /></a>
                     </li>
                   </ul>
                 </footer>
               </section>
-              <ul class="participant-slide-directions">
-                <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
-                <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
-              </ul>
+              <div class="participant-slide-directions">
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-left-direction.svg" width="10" height="20" alt="Предыдущий"></button>
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-right-direction.svg" width="10" height="20" alt="Следующий"></button>
+              </div>
             </footer>
           </article>
           <article class="participant-slider__slide participant">
@@ -196,12 +198,12 @@
               эклектика, экотренд
             </header>
             <main class="participant__photo">
-              <img src="#" alt="классика, нуар" >
+              <img src="./src/img/img-slide-evlektika.png" width="448" height="580" alt="эклектика, экотренд" >
             </main>
             <footer  class="participant__footer">
               <section class="participant-card">
                 <header class="participant-card__avatar-container">
-                  <img src="#" class="participant-card__avatar" width="64" height="64" alt="Костас Папаниколау">
+                  <img src="./src/img/img-avatar-costas-papanikolau.png" class="participant-card__avatar" width="64" height="64" alt="Костас Папаниколау">
                 </header>
                 <main class="participant-card__description">
                   <h4 class="participant-card__author">Костас Папаниколау</h4>
@@ -210,21 +212,21 @@
                 <footer class="participant-card__social">
                   <ul class="participant-card-social">
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-insta.svg" width="24" height="24" alt="insta" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-fb.svg" width="24" height="24" alt="fb" /></a>
                     </li>
                     <li class="participant-card-social__item">
-                      <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                      <a href="#"><img class="participant-card-social__icon" src="./src/img/icon-x.svg" width="24" height="24" alt="x" /></a>
                     </li>
                   </ul>
                 </footer>
               </section>
-              <ul class="participant-slide-directions">
-                <li class="participant-slide-directions participants-slider-directions--left"><button><i></i>left</button></li>
-                <li class="participant-slide-directions participants-slider-directions--right"><button><i></i>right</button></li>
-              </ul>
+              <div class="participant-slide-directions">
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-left-direction.svg" width="10" height="20" alt="Предыдущий"></button>
+                <button class="participant-slide-directions__btn"><img class="participant-slide-directions__img" src="./src/img/icon-right-direction.svg" width="10" height="20" alt="Следующий"></button>
+              </div>
             </footer>
           </article>
         </div>
@@ -324,7 +326,7 @@
       </div>
     </div>
     <div id="tickets" class="tickets">
-        <h2 class="tickets__title">Билеты</h2>
+      <h2 class="tickets__title">Билеты</h2>
       <div class="tickets-description tickets__description">
         <div class="tickets-description__left-container">
           <p class="tickets-description__description">
@@ -427,49 +429,50 @@
       <h2 class="contact-us__title">
         Свяжитесь с нами
       </h2>
-      <div class="contact-us__info contact-us-info">
-        <ul class="contact-us-info__list contact-us-info-list">
-          <li class="contact-us-info-list__item">
-            <p class="contact-us-info-list__title">
-              офис продаж
-            </p>
-            <p class="contact-us-info-list__description">
-              363561, Москва ул. Пушкина 17/1
-            </p>
-          </li>
-          <li class="contact-us-info-list__item">
-            <p class="contact-us-info-list__title">
-              для связи
-            </p>
-            <p class="contact-us-info-list__description">
-              +7 (924) 456 78 90
-              bfw@gmail.com
-            </p>
-          </li>
-          <li class="contact-us-info-list__item">
-            <p class="contact-us-info-list__title">
-              подпишитесь
-            </p>
-            <div class="contact-us-info-list__description">
-              <ul class="contact-us-info-list__social">
-                <li class="contact-us-info-list__item">
-                  <a href="#"><i class="icon icon--fb-small"></i>fb</a>
-                </li>
-                <li class="contact-us-info-list__item">
-                  <a href="#"><i class="icon icon--insta-small"></i>insta</a>
-                </li>
-                <li class="contact-us-info-list__item">
-                  <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="contact-us-info__map">
-          Map
+      <div class="contact-us-info">
+        <div class="contact-us__info">
+          <ul class="contact-us-info__list contact-us-info-list">
+            <li class="contact-us-info-list__item">
+              <p class="contact-us-info-list__title">
+                офис продаж
+              </p>
+              <p class="contact-us-info-list__description">
+                363561, Москва ул. Пушкина 17/1
+              </p>
+            </li>
+            <li class="contact-us-info-list__item">
+              <p class="contact-us-info-list__title">
+                для связи
+              </p>
+              <p class="contact-us-info-list__description">
+                +7 (924) 456 78 90
+                bfw@gmail.com
+              </p>
+            </li>
+            <li class="contact-us-info-list__item">
+              <p class="contact-us-info-list__title">
+                подпишитесь
+              </p>
+              <div class="contact-us-info-list__description">
+                <ul class="contact-us-info-list__social">
+                  <li class="contact-us-info-list__item">
+                    <a href="#"><i class="icon icon--fb-small"></i>fb</a>
+                  </li>
+                  <li class="contact-us-info-list__item">
+                    <a href="#"><i class="icon icon--insta-small"></i>insta</a>
+                  </li>
+                  <li class="contact-us-info-list__item">
+                    <a href="#"><i class="icon icon--twitter-small"></i>twitter</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="contact-us-info__map">
+            Map
+          </div>
         </div>
-      </div>
-      <div class="contact-us__feedback">
+        <div class="contact-us__feedback">
         <p class="contact-us__feedback-title">
           Остались вопросы? Спросите нас! Мы ответим!
         </p>
@@ -492,6 +495,7 @@
             ОТПРАВИТЬ
           </button>
         </form>
+      </div>
       </div>
     </div>
   </main>

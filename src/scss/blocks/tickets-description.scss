@@ -1,5 +1,8 @@
 .tickets-description {
-  margin-left: 145px;
+  display: grid;
+  grid-template-columns: 480px 940px;
+  justify-content: space-between;
+  outline: 1px solid pink;
   &__description {
     line-height: 1.5;
   }

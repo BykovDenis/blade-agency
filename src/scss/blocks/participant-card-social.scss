@@ -1,0 +1,11 @@
+.participant-card-social {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 24px 24px 24px;
+  grid-template-rows: 24px;
+  gap: 10px;
+  &__icon {
+    outline: 1px solid yellow;
+  }
+}

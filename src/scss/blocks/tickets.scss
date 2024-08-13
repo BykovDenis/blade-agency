@@ -1,8 +1,13 @@
 .tickets {
   display: grid;
-  grid-template-columns: 480px 940px;
-  justify-content: space-between;
+  margin-left: $body-margin-left;
+  grid-template-rows: 92px 344px;
   &__title {
     @include h2-header-text;
+    margin-bottom: 30px;
+  }
+  &__price {
+    margin: 0 auto;
+    outline: 1px solid green;
   }
 }

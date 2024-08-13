@@ -1,0 +1,31 @@
+.booking-btn {
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px 107px;
+    grid-template-rows:  93px;
+    padding: 0;
+    width: 407px;
+    border: none;
+    box-sizing: border-box;
+    background-color: $main-gold-color;
+    color: $base-font-color;
+  &:hover {
+    cursor: pointer;
+    color: $main-gold-color;
+  }
+  &__description {
+    box-sizing: border-box;
+    display: grid;
+    background-color: $main-white-color;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    padding-left: 65px;
+  }
+  &__img {
+    align-self: center;
+    justify-self: center;
+  }
+}
