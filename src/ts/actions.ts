@@ -1,5 +1,3 @@
-import 'virtual:svg-icons-register';
-
 window.addEventListener('load', () => {
   
   const mainBodyBlock: HTMLElement | null = document.querySelector<HTMLElement>('.main-body');
@@ -40,8 +38,8 @@ window.addEventListener('load', () => {
     }
   }
   
-  if (sliderBlock) {
-    sliderBlock.style.display = 'none';
+  if (participantsBlock) {
+    participantsBlock.style.display = 'none';
   }
   if (judgesBlock) {
     judgesBlock.style.display = 'none';

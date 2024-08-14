@@ -1,8 +1,8 @@
 import path from 'path';
 import { defineConfig } from 'vite';
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import ViteWebp from 'vite-plugin-webp-generator';
+import ViteSvgSpriteWrapper from 'vite-svg-sprite-wrapper';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -35,13 +35,6 @@ export default defineConfig({
     ViteWebp.default({
       extensions: ["png", "jpg"]
     }),
-    createSvgIconsPlugin({
-      // Specify the icon folder to be cached
-      iconDirs: [path.resolve(process.cwd(), 'src/img/icons')],
-      // Specify symbolId format
-      symbolId: 'icon-[dir]-[name]',
-      inject: 'body-last'
-    }),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
       png: {
@@ -56,6 +49,10 @@ export default defineConfig({
         // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 70,
       },
-    })
+    }),
+    ViteSvgSpriteWrapper({
+      icons: 'src/img/icons/*.svg',
+      outputDir: 'public/img',
+    }),
   ],
 })
