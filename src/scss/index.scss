@@ -36,6 +36,8 @@
 @import './blocks/booking-btn';
 @import './blocks/participant-card-social';
 @import './blocks/icon';
+@import './blocks/participants-slider-directions';
+@import './blocks/participants-slider';
 
 .main-body {
   margin: 0 auto;
@@ -53,7 +55,7 @@
       left: 0;
       width: 1400px;
       height: 767px;
-      background-image: url(../img/img-bfw.svg);
+      background-image: url(../img/icons/img-bfw.svg);
       background-repeat: no-repeat;
       background-position: 50px 200px;
       background-size: 1400px 767px;

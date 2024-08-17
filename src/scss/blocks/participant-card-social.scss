@@ -4,8 +4,24 @@
   display: grid;
   grid-template-columns: 24px 24px 24px;
   grid-template-rows: 24px;
+  align-items: center;
   gap: 10px;
+  max-width: 100px;
   &__icon {
     outline: 1px solid yellow;
+  }
+  &__link {
+    color: $main-gray-color;
+    text-decoration: none;
+    &:hover > .participant-card-social__svg {
+      width: 32px;
+      height: 32px;
+      color: $main-gold-color;
+    }
+  }
+  &__svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
   }
 }

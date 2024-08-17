@@ -13,6 +13,8 @@
     outline: 1px dashed green;
   }
   &__name {
+    padding: 0;
+    margin: -15px 0 0 0;
     font-family: $title-font-family;
     font-size: $h3-font-size;
     line-height: 1.1;
@@ -21,6 +23,15 @@
     line-height: 1.5;
   }
   &__country {
-    font-size: #{$base-font-size - 4};
+    padding: 0;
+    margin: 0;
+    font-size: $label-font-size;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: end;
   }
 }

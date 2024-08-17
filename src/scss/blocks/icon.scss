@@ -1,2 +1,14 @@
 .icon {
 }
+
+#icon-left-direction > path,
+#icon-right-direction > path {
+  fill: none;
+  stroke: currentColor;
+}
+
+#icon-insta > path,
+#icon-x > path,
+#icon-fb > path {
+  stroke: currentColor;
+}
