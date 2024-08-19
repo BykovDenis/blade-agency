@@ -15,7 +15,14 @@
     align-items: center;
     justify-content: center;
   }
+  &__link {
+    color: red;
+    text-decoration: none;
+  }
   &__img {
+    &:hover {
+      color: $main-gold-color;
+    }
     &--visa {
       width: 47px;
       height: 15px;

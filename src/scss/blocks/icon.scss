@@ -7,8 +7,27 @@
   stroke: currentColor;
 }
 
+#icon-star > path,
 #icon-insta > path,
 #icon-x > path,
 #icon-fb > path {
   stroke: currentColor;
+}
+
+#icon-visa-card > path {
+  fill: none;
+  stroke: pink;
+}
+
+.icon-star {
+  width: 16px;
+  height: 16px;
+  &--transparent {
+    opacity: 0.4;
+  }
+}
+
+.icon-check {
+  width: 16px;
+  height: 16px;
 }

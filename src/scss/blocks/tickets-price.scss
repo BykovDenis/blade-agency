@@ -1,0 +1,16 @@
+.tickets-price {
+  &__rates {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 16px 16px 16px;
+    grid-template-rows: 16px;
+    gap: 2px;
+    margin: 0 auto;
+    padding: 0;
+    width: calc(3 * (16px + (2 * 2px)));
+  }
+  &__rate {
+    color: $main-gold-color;
+    justify-content: center;
+  }
+}

@@ -1,3 +1,44 @@
 .tickets-price-table {
   width: 940px;
+  &__btn {
+    width: 192px;
+    max-width: 192px;
+    height: 49px;
+    outline: 1px solid $main-outline-color;
+    background-color: $main-white-color;
+    text-transform: uppercase;
+    background-image: none;
+    border: none;
+    &:hover {
+      background-image: $main-linear-gradient;
+      color: $font-color-inverted;
+      outline: none;
+    }
+  }
+  &__cell-header {
+    text-align: center;
+    &:first-of-type {
+      width: 260px;
+    }
+  }
+  &__cell {
+    text-align: center;
+    padding: 11px 30px;
+    &:first-of-type {
+      width: 260px;
+    }
+  }
+  &__row {
+    height: 52px;
+  }
+  &__row:nth-of-type(even) {
+    background-color: rgba($main-gold-color, 0.1);
+  }
+  &__row:first-of-type {
+    background-color: $main-white-color;
+  }
+  &__body {
+    border-radius: 5px;
+    border: 1px solid $main-gold-color;
+  }
 }
