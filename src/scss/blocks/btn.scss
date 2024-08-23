@@ -1,0 +1,21 @@
+.btn {
+  cursor: pointer;
+  width: 192px;
+  max-width: 192px;
+  height: 49px;
+  outline: 1px solid $main-outline-color;
+  background-color: $main-white-color;
+  text-transform: uppercase;
+  background-image: none;
+  border: none;
+  &--purple {
+    background-image: $main-linear-gradient;
+    color: $font-color-inverted;
+  }
+  &:hover {
+    background-image: none;
+    background-color: $main-gold-color;
+    color: $font-color-inverted;
+    outline: none;
+  }
+}

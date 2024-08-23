@@ -6,4 +6,9 @@
   &__description {
     line-height: 1.5;
   }
+  &__tel {
+    color: $main-purple-color;
+    font-size:calc(100% + 3px);
+    text-decoration: none;
+  }
 }
