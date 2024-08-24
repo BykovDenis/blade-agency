@@ -18,17 +18,19 @@
     justify-content: flex-start;
   }
   &__hashtags {
-    font-size: 24px;
-    color: $main-yellow-color;
+    margin-top: 130px;
     margin-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    color: $main-yellow-color;
     min-height: 29px;
   }
   &__title {
     font-family: $title-font-family;
     font-size: $h1-font-size;
     color: $main-white-color;
-    letter-spacing: 2.88px;
-    line-height: 1.1;
+    letter-spacing: 3.56px;
+    line-height: 1;
     margin: 0 0 70px 0;
     min-height: 160px;
     font-weight: 900;

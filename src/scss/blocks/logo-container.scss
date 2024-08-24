@@ -1,16 +1,16 @@
 .logo-container {
-  outline: 1px dashed $header-color;
   display: grid;
   grid-template-columns: 240px 152px;
   width: 260px;
   height: 145px;
   align-items: center;
   &__hashtag {
-    margin: 30px 0 0 10px;
+    margin: 21px 0 0 4px;
     color: $main-yellow-color;
     font-size: #{$base-font-size - 1};
-    &--invisible {
-      display: none;
-    }
+    letter-spacing: 1.7px;
+    //&--invisible {
+    //  display: none;
+    //}
   }
 }

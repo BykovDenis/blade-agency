@@ -1,5 +1,8 @@
 .contact-us-form {
+  margin-top: 53px;
   &__items {
+    margin: 0;
+    margin-bottom: 40px;
     display: grid;
     row-gap: 35px;
     padding-left: 0;
@@ -7,8 +10,12 @@
   }
   &__item {
     display: grid;
-    height: 73px;
+    grid-template-rows: 25px auto;
+    height: 80px;
     border-bottom: 1px solid rgba($base-font-color, 0.15);
+    &:last-of-type {
+      height: 129px;
+    }
   }
   &__label {
     color: $base-font-color;
@@ -21,6 +28,14 @@
     color: $base-font-color;
     opacity: 0.5;
     height: 45px;
+    background-color: transparent;
+    border: none;
+  }
+  &__textarea {
+    box-sizing: border-box;
+    color: $base-font-color;
+    opacity: 0.5;
+    height: 100px;
     background-color: transparent;
     border: none;
   }

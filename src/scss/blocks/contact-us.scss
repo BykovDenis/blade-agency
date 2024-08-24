@@ -1,13 +1,16 @@
 .contact-us {
+  margin-left: 106px;
   &__title {
     @include h2-header-text;
   }
   &__feedback-title {
+    margin: 0;
+    margin-top: 34px;
     font-size: 40px;
   }
   &__feedback {
     width: 593px;
-    margin-left: 120px;
+    margin-left: 136px;
   }
   &__feedback-title {
     font-size: 40px;

@@ -1,0 +1,24 @@
+.main-body {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: $main-body-desktop-width;
+  color: $font-color-primary;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  background-size: 1920px 1080px;
+  &--main-page {
+    background-image: $main-linear-gradient;
+    &::before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1400px;
+      height: 767px;
+      background-image: url(../../img/icons/img-bfw.svg);
+      background-repeat: no-repeat;
+      background-position: 50px 200px;
+      background-size: 1400px 767px;
+    }
+  }
+}

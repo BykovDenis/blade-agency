@@ -1,10 +1,12 @@
 .nav-items {
   display: grid;
   list-style-type: none;
-  width: 750px;
-  grid-template-columns: repeat(5, 1fr);
-  margin-left: 645px;
+  grid-template-columns: 120px 147px 97px 111px 139px;
+  column-gap: 33px;
+  margin-left: 656px;
+  margin-top: 5px;
   outline: 1px dashed pink;
+  padding: 0;
   &__link {
     text-decoration: none;
     color: $base-font-color;

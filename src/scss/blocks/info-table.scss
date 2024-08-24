@@ -1,10 +1,23 @@
 .info-table {
-  width: 843px;
+  width: 900px;
   &__cell-container {
+    position: relative;
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-template-rows: 40px;
     color: $main-white-color;
+    padding-left: 55px;
+    padding-right: 50px;
+    &:after {
+      display: table;
+      content: "";
+      height: 100%;
+      width: 1px;
+      border-right: 1px solid $main-white-color;
+      opacity: 0.4;
+      position: absolute;
+      right: 0;
+    }
   }
   &__cell-description {
     margin: 0;

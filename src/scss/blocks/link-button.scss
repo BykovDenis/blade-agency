@@ -4,12 +4,12 @@
   justify-content: center;
   position: relative;
   border: 0;
+  padding: 0;
   height: 32px;
-  padding: 0 15px;
   background-color: transparent;
-  min-width: 150px;
   z-index: 1;
   font-weight: 700;
+  width: 100%;
   &--active:before {
     position: absolute;
     display: block;
